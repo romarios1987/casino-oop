@@ -1,0 +1,198 @@
+body {
+    background-image: url('image/bg.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    color: #ffffff;
+}
+
+body::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.container {
+    position: relative;
+}
+
+h1 {
+    margin: 40px 0;
+}
+
+.wrap-btn .btn {
+    max-width: 30%;
+    margin: auto;
+}
+
+.wrap-btn {
+    clear: both;
+    padding-top: 30px;
+}
+
+.wrap-machines {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.item-machine {
+    background-image: url('image/roulette.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.item-machine .btn {
+    background-color: #000;
+    color: #ffffff;
+}
+
+.item-machine .form-control {
+    width: 50%;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, .7);
+}
+
+.item-machine span {
+    background: rgba(255, 255, 255, .7);
+    color: #000;
+    border-radius: 10px;
+    padding: 3px;
+    font-weight: 700;
+    margin: 3px 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: black;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 50px 20px wheat;
+}
+
+.label-wrap {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+}
+
+.h-label {
+    color: wheat;
+    font-size: 18px;
+    font-family: monospace;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0px 24px;
+}
+
+.h-label input {
+    width: 164px;
+    border: none;
+    box-sizing: border-box;
+    padding: 4px;
+    text-indent: 0.33em;
+    font-size: 14px;
+    border-bottom: 2px solid red;
+    outline: none;
+    background: transparent;
+    color: wheat;
+}
+
+.header button {
+    width: 200px;
+    height: 30px;
+    border: 2px solid red;
+    border-radius: 20px;
+    background: red;
+    outline: 0;
+    color: white;
+}
+
+.header button:hover {
+    border: 2px solid palegreen;
+    background: palegreen;
+    color: fuchsia;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    margin-top: 100px;
+}
+
+#totalMoney {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 900;
+    background: darkorchid;
+    color: wheat;
+}
+
+#machines {
+    width: 100%;
+    list-style-type: none;
+}
+
+.machine-wrap {
+    width: 200px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    color: wheat;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px;
+    margin-bottom: 24px;
+    border: 2px solid red;
+}
+
+.machine-wrap input {
+    width: 50px;
+    border: none;
+    border-bottom: 2px solid red;
+    background: transparent;
+    color: white;
+    outline: none;
+    text-indent: 0.33em;
+}
+
+.machine-wrap button {
+    width: 100%;
+    border: 1px solid transparent;
+    outline: 0;
+    background: transparent;
+    color: wheat;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.machine-wrap button:hover {
+    border: 1px solid red;
+}

@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Casino OOP</title>
-	<link rel="stylesheet" href="style.css">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+    <title>Casino OOP</title>
 </head>
+
 <body>
-	<h1>Hello World !</h1>
-	<script src="common.js"></script>
+<div class="container">
+    <h1 class="text-center">Homework example Casino OOP</h1>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label for="userMoney">Enter Your Money</label>
+                <input type="text" class="form-control" name="userMoney" id="userMoney" value="1000">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label for="numSlot">Enter Quantity Machine</label>
+                <input type="number" class="form-control" name="numSlot" id="numSlot" value="0" min="1" max="15">
+            </div>
+        </div>
+        <div class="wrap-btn">
+            <button class="btn btn-success btn-block" onclick="pushMoney()">Push</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="wrap-btn">
+            <button class="btn btn-danger btn-block"><span id="total">0</span></button>
+        </div>
+    </div>
+    <div class="wrap-machines" id="machines">
+
+    </div>
+</div>
+<script src="common.js"></script>
 </body>
+
 </html>
